@@ -1,2 +1,0 @@
-# conFusion
-Just for learning
