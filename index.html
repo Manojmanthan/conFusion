@@ -9,12 +9,14 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
    <!-- Bootstrap CSS -->
+   <!-- build:css css/main.css -->
    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
    <link rel="stylesheet" href="css/bootstrap-social.css">
    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <!-- endbuild -->
 </head>
+
 
 <body>
   <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
@@ -29,10 +31,10 @@
         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
-
       </ul>
+
       <span class="navbar-text">
-                 <a data-toggle="modal" data-target="#loginModal">
+                 <a class="btn" data-toggle="modal" data-target="#loginModal">
                  <span class="fa fa-sign-in"></span> Login</a>
              </span>
       </div>
@@ -111,8 +113,6 @@
                                 <label class="btn btn-danger btn-sm">
                                   <input type="radio" name="section" >Smoking
                                 </label>
-
-
 
                               </div>
                             </div>
@@ -335,35 +335,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-        <script>
-          $(document).ready(function(){
-            $("#mycarousel").carousel({interval: 2000});
-
-            $("#carousel-button").click(function() {
-              if($("#carousel-button").children("span").hasClass("fa-pause")){
-                $("#mycarousel").carousel('pause');
-                $("#carousel-button").children("span").removeClass("fa-pause");
-                $("#carousel-button").children("span").addClass("fa-play");
-
-              } else if($("#carousel-button").children("span").hasClass("fa-play")){
-                  $("#mycarousel").carousel('cycle');
-                  $("#carousel-button").children("span").removeClass("fa-play");
-                  $("#carousel-button").children("span").addClass("fa-pause");
-
-                }
-
-
-
-            });
-
-
-          });
-
-        </script>
+        <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 
 </body>
