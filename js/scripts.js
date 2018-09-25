@@ -16,5 +16,20 @@ $(document).ready(function(){
 
   });
 
+  $("#loginButton").click(function(){
+    $("#loginModal").modal('toggle');
+  });
+
+  $("#reserveTableButton").click(function(){
+    $("#reserveTable").modal('toggle');
+  });
+
+  $("#cancelLogin").click(function(){
+    $("#loginModal").modal('hide');
+  });
+
+  $("#cancelReserve").click(function(){
+    $("#reserveTable").modal('hide');
+  });
 
 });

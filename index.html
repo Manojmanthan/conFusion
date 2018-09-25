@@ -34,7 +34,8 @@
       </ul>
 
       <span class="navbar-text">
-                 <a class="btn" data-toggle="modal" data-target="#loginModal">
+                 <!-- <a class="btn" data-toggle="modal" data-target="#loginModal"> -->
+                 <a class="btn" id="loginButton">
                  <span class="fa fa-sign-in"></span> Login</a>
              </span>
       </div>
@@ -42,15 +43,15 @@
   </nav>
 
   <div id="loginModal" class="modal fade" role="dialog">
-          <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-dialog modal-md" role="content">
           <!-- Modal content-->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Login </h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-content" style="border:0px">
+              <div class="modal-header" style="border:0px">
+                  <h4 class="modal-title" >Login </h4>
+                  <button type="button" class="close" data-dismiss="modal" >&times;</button>
               </div>
-              <div class="modal-body">
-                  <form class="form">
+              <div class="modal-body" style="border:0px">
+                  <form class="form-inline">
                       <div class="form-group ">
                           <label class="sr-only" for="exampleInputEmail3">Email address</label>
                           <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
@@ -66,8 +67,9 @@
                       </div>
                   </form>
               </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+              <div class="modal-footer" style="border:0px">
+                  <!-- <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button> -->
+                  <button type="button" class="btn btn-default btn-sm" id="cancelLogin">Cancel</button>
                   <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
               </div>
           </div>
@@ -77,24 +79,24 @@
       <div id="reserveTable" class="modal fade" role="dialog">
               <div class="modal-dialog modal-md" role="content">
               <!-- Modal content-->
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h4 class="modal-title">Reserve a Table </h4>
+              <div class="modal-content" style="border:0px">
+                  <div class="modal-header" style="border:0px">
+                      <h4 class="modal-title" >Reserve a Table </h4>
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
-                  <div class="modal-body ">
+                  <div class="modal-body " style="border:0px">
                       <form >
                           <div class="form-group row">
                               <label  for="exampleInputEmail3" class="col-md-3 col-form-label ">Number of Guests</label>
                               <!-- <input type="radio" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email"> -->
                             <div class="col-md-9">
                               <div class="btn-group form-check" role="group">
-                              <input type="radio" name="guests" ><label class="mr-2">1</label>
-                              <input type="radio" name="guests" ><label class="mr-2">2</label>
-                              <input type="radio" name="guests" ><label class="mr-2">3</label>
-                              <input type="radio" name="guests" ><label class="mr-2">4</label>
-                              <input type="radio" name="guests" ><label class="mr-2">5</label>
-                              <input type="radio" name="guests" ><label class="mr-2">6</label>
+                              <input type="radio" name="guests" ><label class="mr-3">1</label>
+                              <input type="radio" name="guests" ><label class="mr-3">2</label>
+                              <input type="radio" name="guests" ><label class="mr-3">3</label>
+                              <input type="radio" name="guests" ><label class="mr-3">4</label>
+                              <input type="radio" name="guests" ><label class="mr-3">5</label>
+                              <input type="radio" name="guests" ><label class="mr-3">6</label>
                               </div>
                             </div>
 
@@ -138,15 +140,14 @@
 
                           <div class="form-group row">
                             <div class="offset-sm-3 col-md-10">
-                            <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                            <!-- <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button> -->
+                            <button type="button" class="btn btn-default " id="cancelReserve" >Cancel</button>
                             <button type="button" class="btn btn-primary ">Reserve</button>
                           </div>
                           </div>
                       </form>
                   </div>
-                  <div class="modal-footer">
 
-                  </div>
               </div>
               </div>
           </div>
@@ -164,7 +165,8 @@
                 <div class="col-12 col-sm align-self-center">
                   <!-- <a class=" btn btn-block btn-sm btn-warning nav-link" data-toggle="tooltip" data-html="true" title="Or Call us at </br><strong>+852 12345678</strong>"
                     data-placement="bottom" href="#reserveTable" >Reserve Table</a> -->
-                  <a class=" btn btn-block btn-sm btn-warning"  data-toggle="modal" data-target="#reserveTable" >Reserve Table</a>
+                  <!-- <a class=" btn btn-block btn-sm btn-warning"  data-toggle="modal" data-target="#reserveTable" >Reserve Table</a> -->
+                  <a class=" btn btn-block btn-sm btn-warning" id="reserveTableButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -249,7 +251,6 @@
              </div>
             </div>
         </div>
-
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
